@@ -1,0 +1,186 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CERTIFICATE" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="679.6,2429.8" sap2010:WorkflowViewState.IdRef="CERTIFICATE_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="76">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="66">
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="CERTIFICATE" sap:VirtualizedContainerService.HintSize="689.6,2404.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="name" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange AddHeaders="True" DataTable="[name]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="648,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\haris\Downloads\rpa new automation\certificates\certificate names.xlsx">
+      <ui:ReadRange.Range>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:ReadRange.Range>
+    </ui:ReadRange>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[name]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="648,2184" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="614.4,2063.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="C:\Users\haris\Downloads\rpa new automation\certificates\Certificate of Birth Template.docx" sap:VirtualizedContainerService.HintSize="572.8,1970.4" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
+              <p:WordApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WordDocument">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1860.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'winword.exe Certificate'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InScope="[WordDocumentScope]" ScopeIdentifier="WordDocumentScope" Text="[CurrentRow.Item(&quot;name&quot;).ToString]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="810, 461, 349, 68" FriendlyName="'winword.exe Certificate'" Guid="04108ece-8477-46a1-a51f-b80d0ee1dbf1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAV0AAABECAYAAAAiJuZQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMxSURBVHhe7dwxjtpAFAZgTpLj5B4rpaBLzQFS5QQgrZIbbJOCkgukTBqiNK5S5AyOHmLQrG1YO+vxyub7pJGswQwUT79m33hZ1Q2Hw6F+eHg4jeDa9djXMfb7/WnulrwW0wiuXY9xncbQWnytVujGFxhrcWhKtdWn0NUiJZWqxXTftdEK3d1ud3phs9mcZ2A8UVdRX9vt9jxznVqkpFK1GPfd8ix0j8fj6Q19vwgMFXWVaizq7Rq1SGmlajHuu+USurHwer2+LF5V1fkVGE/UVaqxqLeuYleLTKFULcZ9t6yiV5Enfow+PQ74X3l/LEb86RZzapGplajFuPeWVb7okIXhNZrF3jXUIlMYuxbj/ltOoRvN4Uh1f8Yxpai3qLt0oKEWeStj1mK8t8uHp1/1+y8/2k8vANyza6HZ17X3fzpU9cdvv4UuwJheCm2hC5AptdNNhC5ARugCzMi10I1DtHefvwtdgFypne7Tz7/11+9/hC5ATnsBYEaELsAA2gsAEyoVug7SAArQXgAYoNRONxG6ABmhCzAj10LXD94AdCi10/XTjgAdtBcAZkToAgxgpwswoVKh6yANoAChCzCA9gLAhIQuwIwIXYAB7HQBJiR0AWbkxdCNGzabTb3dbuuqqs7TAPcjsi8yMLIwMvE1udgrdPOx3+/PLwEsX2ReMwebY0gudr0/H6tYbLfbPZsUvMA9aAZu7GxjrmQuXnq6x+OxXq/Xlw/QagCWLDIu5V1kX2RgU4lcfHaQFh+QFo/EB1iqyLiUd12Bm4ydi62nFx4fH0+LRxMZYKnSoVm0EV4yZi62QvdwOFxSHWCpUs716dWOmYut0M0bywBLlXKuT+iOmYut0E0ndtoLwJKl9kKfPu2YueggDbhLb36QFgt7ZAy4F2/2yFj0KvLEj9GnxwEwd3mvNka0EWKuZC76N2DgrjWDt2uMmYt+8Aa4e5F9kYHpcK1kLraeXgCgHKELkIldbklCFyAjdAEWROgCZOx0ASYkdAEWROgCZOx0ASYkdAEWROgCZOx0ASYkdAEWROgCZOx0ASYkdAEWROgCZOx0ASYkdAEWROgCZMrudOv6H7sOdMXzfgnTAAAAAElFTkSuQmCC" InformativeScreenshot="bc3ed8fad18cedc5990500c8461945f2.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='Certificate of Birth Template - Word' /&gt;" SearchSteps="Image" TargetType="ImageBased">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="875, 418, 223, 28" FriendlyName="'winword.exe Certificate'" ImageBase64="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" SearchSteps="Image" TargetType="ImageBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'File Tab'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" InScope="[WordDocumentScope]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="WordDocumentScope" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="14, 69, 68, 38" ElementType="Button" FriendlyName="'File Tab'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia automationid='FileTabButton' cls='NetUIRibbonTab' name='File Tab' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia automationid='FileTabButton' cls='NetUIRibbonTab' name='File Tab' role='Button' check:fulltext='File Tab' /&gt;" Guid="df82c88b-43d2-4dc4-be83-ad09e615197c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAAqCAYAAAAQ0R0WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAF+SURBVGhD7dU/joJAHMXxPYwH4AD2XMADeAB7emsOYG1P7wE4ga0B/8SSwpoEf5s32dkgi/vcrKDoM/kmMjCT+MkwfhyPR1PXExBJQCQBkQREEhBJQCQBkQREEhBJQCQBkQREEhBJQKSnAIqiyMIw/L6eTCau+jOPqheg+Xxuo9HoRx5hNpsJCCBJkly0Wq1an39boLZ7bQmoUROkDQg7Dq8h1gmCwK1Zv99VgwACDuZjHXxfLpe9IT30kMaPxX0GNB6P3UHur1Ecxw6pPtZFDz2k1+u1u/8bEJ6pY/pwjfE0TS/G793Tv2Ie4lpNuHv39EDYIZiLVwoYzfwu7KpBHNI4g7CGv+6zQQAtFgs3H+v4nYOx5sHdRYMAQvhrx07COmg6nbqx+jNd1AvQkBMQSUAkAZEERBIQSUAkAZEERBIQ6V9Ah8Ph5fszECbtdjvbbreWZZltNpuX7mYgDwOU0+lkZVna+Xy2V//cBLTf7y3PcyuKwqqq+pr6Dh+zT9D5lkZxtf9AAAAAAElFTkSuQmCC" InformativeScreenshot="8e80e17d7396aeb77dbfc721ad49d783.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='Certificate of Birth Template - Word' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Save As'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" InScope="[WordDocumentScope]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="WordDocumentScope" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="9, 445, 175, 50" FriendlyName="'Save As'" FullSelectorArgument="&lt;uia automationid='NavBarMenu' cls='NetUIKeyboardTabElement' name='File' /&gt;&lt;uia cls='NetUIRibbonTab' name='Save As' /&gt;" FuzzySelectorArgument="&lt;uia automationid='NavBarMenu' cls='NetUIKeyboardTabElement' name='File' /&gt;&lt;uia cls='NetUIRibbonTab' name='Save As' role='List Item' automationid='' check:fulltext='Save As' /&gt;" Guid="53923913-36da-4f8b-83fb-0c76b9ad5d3d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALMAAAA2CAYAAACMaaiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJFSURBVHhe7dfBjRpBFEVRB0MYhEEYREEUkwRZkAUrhNixZd32w37jr+9qC29mPK/uSEfQVFGwuFXTfPPf8uPvfr8vt9sN+O9dr9flcrks5/N5eTweT79SJmZ8LcSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGNPHvN/vl81m82632w3nfaTtdvs0GsO6qWNWuD1exV2vP9rxeHyPWc9HczA2bcyn0+l5EutxNP5ZtJkOh8Pz8bM31lcz9cmsmN/e3oZj4uCt/uvXid5jU4R1jq7r+1/ZOJ6nU1nP+7hf/5c1ZzF1zI5t7QTUeI2lBqxN0O9rde3NoXn1Fkavj+Ks+pp1PfHm8ndS2MT82/Q/AB2IKN7RHFNYNVC9x/e1XqeO9dB6nJ3Wrt9Bz+vnrZ3W+Gn6mM2h1HjEp7fVk1Onr+PTo0/tfitQrcXszVA3gNepr+nz/7bOzIi5cFA+bRVOv1WoMddrzfP7HKHnvaJvmsobxvw9pYY+O2JuFIhiHAWpqGrM4vl1bt8Ur9C6o9N29JnWb0tmN23MCq7/8PPp6PEapK97WFpDr/W1FFoNXPoc82YYnbL1e5jH1jbArKY+mRVJ1UN13B7rtxniEGtk5qBtLTzNk9GYeNyfZWubY1bcZiAGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSMGMSPGnzE/lu/XyEC25YNVbgAAAABJRU5ErkJggg==" InformativeScreenshot="9fc4a9b04905e7ab73853ee649835856.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='Certificate of Birth Template - Word' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Pin this'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" InScope="[WordDocumentScope]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="WordDocumentScope" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="663, 252, 964, 70" FriendlyName="'Pin this'" FullSelectorArgument="&lt;uia cls='NetUIElement' name='Save As' /&gt;&lt;uia automationid='GroupGettingStartedSaveAsMRUPlacesOrNavSlab' cls='NetUISlabContainer' /&gt;&lt;uia cls='NetUICoreListView' /&gt;&lt;uia cls='NetUIVirtualListElement' name='Today' /&gt;&lt;uia cls='NetUIVirtualListElement' name='certificates' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIElement' name='Save As' /&gt;&lt;uia automationid='GroupGettingStartedSaveAsMRUPlacesOrNavSlab' cls='NetUISlabContainer' /&gt;&lt;uia cls='NetUICoreListView' /&gt;&lt;uia cls='NetUIVirtualListElement' name='Today' /&gt;&lt;uia cls='NetUIVirtualListElement' name='certificates' role='List Item' automationid='' check:fulltext='Pin this item to the list' /&gt;" Guid="76100a73-9de9-4841-abd8-44c4ff978972" ImageBase64="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" InformativeScreenshot="4a3f500daef0dc5f135a791f3ace9f2c.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='Certificate of Birth Template - Word' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Certificate of'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InScope="[WordDocumentScope]" ScopeIdentifier="WordDocumentScope" Text="[CurrentRow.Item(&quot;name&quot;).ToString]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="169, 411, 752, 22" ElementType="InputBox" FriendlyName="'Certificate of'" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="5f665944-1e31-4dbe-b167-9b5883c684a8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAvQAAAAaCAYAAADYDcjNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQZSURBVHhe7dzrsdowEEBh1+WCXA/V0AwlUISjhw3S7kpeAoZocr4ZJveCbEtyfpw4N5nu9/sKAAAAYEzT9isAAACAARH0AAAAwMAIegAAAGBgBD0AAAAwMIIeAAAAGBhBDwAAAAzMFfS3y7xO01S8lvW6ffYp10Wf93nd/L41ZgRyHZLe32mdL7ft0+zv1n5bL/O0Ls6D8jUaL+9JThDnJfcDAAAA2UHQ5yBUIXld3JFoCsdP8yWcveN2WedpXk/rOM8cPsGxjhT05YamY/wh/qDW9FrQl1Lc/zDiSy8H/bfuLQAAwD+gG/QpNM8II3fQn/g0/qtB31+HCvrgr4KaoM8IegAA8B/pBP11XZxPiesfGSmfRu9Bmc8Vn/QvMRQfY8Nru0AZbepHUIwxOzn2Md/tKffjsyLwUqyWnxWLbK/F1ppr1PuslMaJz+Ra6++9+7qPy7/mz3x/65H2yJhvb3/yHK/Ftbb7Ud2L+g83+7qq84oYl3tRn68en+ZdflasoTd3AACAUbWDPj7ldDwhT5FUBlh1XA7JeV7qeDKeoNrRZsffLgdaMSYcE3py+7K85ha0ZaAac+ivRVPXt65jrENK55Fz667du697yD/jNQWvWLcljSvnFBztTzqmuFben/J6en/yMXptckx938+/twAAAKN4M+jjE2L5pDMHVu6r/HUV6pERXDLaQoEdBL3/bxASeU01h6O1SNb4QM7bG/SPJ8f5Ja9Zr927r8Y4x3yiFNrVJI73xz5GrEXMUR8TpDk+r1Wv3fDxewsAADCO94I+jXlGaPnKodSIJhVc8a3j8KzGOOanQrkXfYdrEZrXF/HoDfrqInnfyvfq/fHuqzFOxHKLCm3H/ujwNkJazFEfE9XHWWNOvbcAAAADaQe9J/xSKPVi9VdBn58MH0aeir5+eFea4z8R9IHY/3p/fhX0/XXo8D4j6L9wbwEAAAbS+UexOQZVaJYO4/DEoO9d2zg2RXMv+pyh+9AaL69tzEVqB/3zuHp/fhD0juPUPQyz9wS9WrsIcH3fT763AAAAA+kEfWQ8DY1CMO0NloKsCqwQkcs+vhOeIspUDBrhJseoa4dj0j+KlQGXvhfraMyhvRbNHB/We7QOSQd9Pk/5Xr12774a4+TeNKS1iQsc7U89x8gZ9NWPvuTfc/I+P77/0r0FAAAYxUHQR1tcxmjaXyLw9yjbX4fhWZ5z+1DFoBHCakxQX/sZeimS9/fjfEVIWnOI2muxVdexxnuDvjhHehkx/fq+GuPeCPqotz/1HCNf0Mv/6rK/drFfJ95bAACAETiCHjiP/kMAAAAAXkHQ46cIegAAgPcQ9Pgpgh4AAOA9BD0AAAAwMIIeAAAAGBhBDwAAAAyMoAcAAAAGNt3v9+1LAAAAAGNZ1z9KVCNU+ImtnQAAAABJRU5ErkJggg==" InformativeScreenshot="eeab0945db59d4251090634ff70a800b.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" InScope="[WordDocumentScope]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="WordDocumentScope" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="696, 576, 110, 33" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' check:text='unchecked' /&gt;" Guid="8440a00c-263f-452a-a4f8-02da8674b887" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHIAAAAlCAYAAACeVr0yAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAInSURBVHhe7ZuxbsIwEIb9BjyPJd6A58jUbl06QZ8Ab2ztW2ShUquWB2iFqg6pGNiKACkLSyt0zR0J+BxDt9Y2N3yD5XOGfP4vUeSosixBiB8RmQgiMhFaIqfzNXRHH9C5eQd1/SYERu92Ro5cb0wkFqDAwf0C1ptv2G63QkCgk+FkCZ3Be0smE9m7m4GZrLwXEcKhP/6krmm7YyIxupLE8FlvviiVzB0bVCJ9C4XwQFfMHRuIyGgQkYkgIhNBRCaCiEyEqEXmmQKlLLLcW3cORCqyAKPb4nJjoLDG50ScIgsDWmkwhWfuTIk0kTlkVSvNct9cDcm22q4+pJVaspPmwmhWQ+P9+vA3TaQiDzdam+LIfGbdfKcV5xmT1sw3G8OVSvUqg3xfHx7RiiSs1B0TuofJw0RbKaPrNKKcOYKLDpG4RTZQYo60y1o04bTXRj7V2Wm111iIyL+AvQDtnqGt9ugdO2kjkWG3UR/piLRfgFir3NF67jUtNHdq2YaIhzhF4s32ttFaiCuDxk5CK6i9at16vu4+NNgboUptxteGRqSJrFsnw5PAZg4Fuq0VoTbqT5/71ejXl6l/JlKRgouITAQRmQgiMhFEZCKIyEQ4KRJPmcu51vDBc60nReLp5f544V0shMPweUn/gNjumMjpfEWpxP8LJJnhgU7wdwF0hK5sd0wkggW90Suoy0dQFw9CQHSunqBrXloSkZZIIU5EZCKIyCQo4QeVpOw27wwOdwAAAABJRU5ErkJggg==" InformativeScreenshot="54322ee200f6a3a4a1ccd6ad21018c88.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="333.6,178.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InScope="[WordDocumentScope]" ScopeIdentifier="WordDocumentScope" Shortcuts="[d(hk)][d(ctrl)]z[u(ctrl)][u(hk)]" Version="V1" />
+                    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="congrats" DisplayName="Send SMTP Mail Message" Email="harishmithasv003@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Password="sait eibp qekm ruci" Port="465" SecureConnection="Auto" Server="SMTP.gmail.com" Subject="testing" To="21bcc011@psgrkcw.ac.in">
+                      <ui:SendMail.Files>
+                        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                          <InArgument x:TypeArguments="x:String">[CurrentRow.item("file").ToString]</InArgument>
+                        </scg:List>
+                      </ui:SendMail.Files>
+                    </ui:SendMail>
+                    <p:WordExportToPdf DisplayName="Save Document as PDF" FilePath="[&quot;C:\Users\haris\Downloads\rpa new automation\certificates\&quot;+CurrentRow.Item(&quot;name&quot;).ToString+&quot;.pdf&quot;]" sap:VirtualizedContainerService.HintSize="333.6,56" sap2010:WorkflowViewState.IdRef="WordExportToPdf_2" />
+                  </Sequence>
+                </ActivityAction>
+              </p:WordApplicationScope.Body>
+            </p:WordApplicationScope>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>

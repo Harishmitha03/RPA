@@ -1,0 +1,151 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ocr_with_word" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,1644.8" sap2010:WorkflowViewState.IdRef="ocr_with_word_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ocr_with_word" sap:VirtualizedContainerService.HintSize="475.2,1580" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="ab" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:GetOCRText Text="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get OCR Text 'customised  D2DImageCon...'" sap:VirtualizedContainerService.HintSize="433.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_1">
+      <ui:GetOCRText.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+          <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_1" Image="[Image]" Text="[ab]" />
+        </ActivityFunc>
+      </ui:GetOCRText.OCREngine>
+      <ui:GetOCRText.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4d57ab8d-681a-421e-8ea5-6ad0bc8313e2" InformativeScreenshot="bf9ecbd65abbe676a0e75f993a7fa28e" Selector="&lt;wnd app='applicationframehost.exe' appid='Microsoft.Windows.Photos_8wekyb3d8bbwe!App' title='ocr.png ‎- Photos' /&gt;&lt;uia automationid='D2DImageControl' role='customised' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:GetOCRText.Target>
+    </ui:GetOCRText>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Document1 - Word" sap:VirtualizedContainerService.HintSize="433.6,1277.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="e36a5004-7dfe-4303-ad0b-f7a7a8172b2e" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,986.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'edit Page 1 content'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="e36a5004-7dfe-4303-ad0b-f7a7a8172b2e" Text="[ab]" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="477, 402, 992, 600" ElementType="InputBox" FriendlyName="'edit Page 1 content'" FullSelectorArgument="&lt;uia automationid='Body' name='Page 1 content' role='edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='Body' name='Page 1 content' role='edit' /&gt;" Guid="b59982f4-3d41-4de2-aa72-b7442d132804" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA+QAAAJcCAYAAABws269AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAA6hSURBVHhe7dexjQIBEATByz8wIoEQzr4XiDcIANqYKmmk1WbQx+PxuJ673W4XAAAA8D3P9r7f768JcgAAAPgRQT7oOI73BQAAQEWQDxLkAAAAPUE+SJADAAD0BPkgQQ4AANAT5IMEOQAAQE+QDxLkAAAAPUE+SJADAAD0BPkgQQ4AANAT5IMEOQAAQE+QDxLkAAAAPUE+SJADAAD0BPkgQQ4AANAT5IMEOQAAQE+QDxLkAAAAPUE+SJADAAD0BPkgQQ4AANAT5IMEOQAAQE+QDxLkAAAAPUE+SJADAAD0BPkgQQ4AANAT5IMEOQAAQE+QDxLkAAAAPUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAAUEOAAAAgY8g/z8EOQAAAHyXIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAICAIAcAAIDAR5C/fwAAAMAPHed5XmZmZmZmZmb2y53XH3BsYouQjRIfAAAAAElFTkSuQmCC" InformativeScreenshot="4116e616486e6bef6c9fd1e33a12c784.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='Document1 - Word' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="333.6,178.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][d(ctrl)]s[u(ctrl)][u(hk)]" Version="V1" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Doc1'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="e36a5004-7dfe-4303-ad0b-f7a7a8172b2e" Text="ocr1" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="52, 130, 427, 18" ElementType="InputBox" FriendlyName="'Doc1'" FullSelectorArgument="&lt;wnd aaname='Save this file' cls='NetUIHWND' /&gt;&lt;ctrl name='File name' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Save this file' cls='NetUIHWND' /&gt;&lt;ctrl name='File name' role='editable text' automationid='' /&gt;" Guid="5bc6620b-63b0-4b27-b7ee-523bb9b2358a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAa8AAAAWCAYAAAB32RMIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAErSURBVHhe7drbbYMwAEDRDsNATMMyzMIqrOJiEhrbtZIU81Er50gJDxPn8wrwVwCAzogXAN0RLwC6I14AdEe8AOiOeAHQHfECoDtFvJYwDUMYss8Y5vU+fInbf4zXTgrAB6nEq4jVMu0Rm5b7cYN1Hre5pjBvW/EC4KzX8YpiwMY55E1L7s6KsSgdL0MVIyZeAJz1XryK8/sdVBKsPVTJrVk+voZlyScULwBanIhX7Zp4btq+j/3aHA/iBUCLP8QrjdOxf0h/VxvPiRcALd6K1/4Y8OexYO2aNFj1OVLiBUCLl/Haw1Wc299xPXnnlR975wXAtSrxuq0QfLaSMEpXE/6+Zg3z+Bgvl9mLFwAtingBwP8nXgB0R7wA6I54AdAd8QKgO+IFQGdC+AZ3zu7wWXST8QAAAABJRU5ErkJggg==" InformativeScreenshot="f7082446763ca2687e7a4bc7824b5e7c.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='NUIDialog' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e36a5004-7dfe-4303-ad0b-f7a7a8172b2e" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="348, 393, 88, 30" ElementType="Button" FriendlyName="'Save'" FullSelectorArgument="&lt;wnd aaname='Save this file' cls='NetUIHWND' /&gt;&lt;ctrl name='Save' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Save this file' cls='NetUIHWND' /&gt;&lt;ctrl name='Save' role='push button' automationid='' check:text='Save' /&gt;" Guid="c292739b-69b3-40ce-9e55-285b0d83d183" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAiCAYAAADSx77pAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJVSURBVGhD7Zq/SlxBFMbzFImFlQT88wzRV0ivLghRJA9gZ2PrFqYWLOyVxUoDKqtgVFBYLUQRFWKhIigiNjbj/db7rcfZI0ncODMu54Mfu/fOzHXvb86dWzgfnCVoTHjg1Anf3L92/cUd1zm84lp6lxJmMVm6Mnd9xYpb27vOrT7lmfDJ+d+utX/ZtfThhrJP9UaNv6W1sOQmSie53cfUhM+tX7iu76vqQOP1fB4su9Kv89yyEP7tx646wGgcuGVqwntG1tXORuN0j2zkloVwraPx/2BMeCAYEx4IxoQHgjHhgWCiC986vMl/wWOOzu7Ufu8dJqpwyPUFYwLkcbPARBP+dWy7+nfxqbU3G0zUCkemfp6qbYCTwlzd3tfa8GT4T8PC9uWzPjiWiTm5TFThFPLSMoJ2KUlKxkRJuQDHnED0k8sVziM8Dg0T/aUpqxiCtT4E0qREZHT6oPqd15FtfkXLCQnLYvX3INGFE4hD/JeovyzIqkYVc5LwyerntbSYcAGrlFULuf6yIIXLY/TjOApnv/gkKhwgEKZJQxVL4QDx+/oTF58EhEOK/7Lk8sF2hNJ47AvHNXDOvxYqHpHn/D7hSKTC/fgy5fqNNn9JAaxurZopnYmzfoOEl5TmJAHhf4o25v1iFR4YEx4YRXi3/RP5zfiSuWVqwgvFitrZaJzCeCW3LIRjs0r7UFkdYLyetoGym11TNgIhE6Vj9ylbb7SBxr/zMXNZnHlhqxuDDYh4BDqqmznrNyqmg36TKdA5vJo53MlcXuVWn1In3PK2MeFB49wDIt8KnOxPaeEAAAAASUVORK5CYII=" InformativeScreenshot="8228a3ccddedc42186294c1eb175fa67.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='NUIDialog' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" FilePath="C:\Program Files\Microsoft Office\root\Office16\winword.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATCSURBVFhH7ZhtUFRlFMehaaYy3F1hXV7UACk1nZrJHCHyJacZULR4MdAyAjQNKhvTcewFmCyzSVCwaWqsSWukhsrlxQoBBZZlidDNEl8qx0aRtCLQGis/+OF0znn2Prss1+UuXPeD05n5DXcvc/f/4znnee4MQddT3RBgNFfwvIq+2nkfX4CAUtFf48ofsm5W/YIAgNk3CgXfZVR7OBBgdohQ8F0mtYcDAWaHCgXf9b/g1cBsrYL9+MBQqIeMBMzWJjhnZw9cnV+YubvOwwO7e+l4UA0bDpgdGnR7QXs1AnH5DmbiU0QbTFzVBrHEyjaIedIuWGGHaKYVbluO5LXChFwbMz7HBpOe70TRcyjapxroLywYV+AlhihisStdYsggsTy32PicFhj3BJLdAnc8ewCmvuCEaYVdyNERIQQ95Nxi7lUbIIZM8Fq1cS65qOxmiHq8GVe+Du5c3wHTXj6iGuoPLCjFvNrpLebdTveqoRgSiXKRy5ohdkUtTFnngKkvfa8a6g8s6NnO8r3dUFbbDfdv6JRyies7YVvNGSa5yCnF4td2wNaq01CKkFjksiaIeKwJYvKqYMpaOwp+pxrqD0LQY856+i4DVRnKiHba4JVPTvE9qvcbenjOaMWKK07yvbO9l1mMCH/0gEuwVT9Bz3Z+7viNQzt+uCjbWf/tH3yP6lj3JZ4zauen9l/5XmXreYhAsfClxH6IybXqK+g5Z8pq/fXPFTlndO1Zk1fZuZ3Hzlziz0Uf/cRi4Uv2g2VJI0TrLSg3ALYzudjJoVQJOGNJhYf4+usTF6VQxmuHccWa+JrqwQ3foFwjWLKQzAaIztFZcOB5ZpMrtry8C9bsOMHX7+07y1CV7PkZ0l8Vf8iff1+RYpbMerA8Uo+Ce3QWdMkp51m9U8xcqfW0nLPcrUfguXeP83X78QvcVqq6g78LORQbu3gfY07ZBZbFVohY2ig3z3BhQc+3AO/O3WJ3tmNbaYdSzVjtYJSqtJ3jn1s+OwVjFbmMOsacslNfQUWMdyeeZxmbDnO4UiQpNkEjXv/ruisqrbgTpYScOf0rMKchegsqxwbJKb/wrLqDvWLOshqgskWsnFJCDCGx1C/B/PAXELZAZ0HPt4ByntGcKVX44Y9yzla/3eW6C+A42u8WS0UxkntoLwp+oK8gf8Bjg94CynmWvvEQlOB8Efc+3SrnbHq+DbZUnmSyNztZTooRi2r1F5RirjnzPjbEBvCaM6WdihyKhS5EUmogbL7egspbwDVnA44NKeY1Zx5iYSS2sAblqiF0QbX+gvR6kqtGYlIOjw0S41XzmjO5am6xMfOrYEyyFcKS3kHBKh0FMxuqqZ1uscHtZLEB7SQxRIohSVYwzHoLRk9fB8bEN8A0ZxuY5m4fESyooUy3xKWCb9Jg1KQsuPWufDDMLATjrDcxoGxQoL9gtjbBkLsLwDfPQMg9a2D0jBfBeN8mMM0uxYDyQYH+gtnaBA0zi3BlfBBfDIaEjdjazWCcXYLtHfnqEZitTZBCh4JXjedOHzkCs7UJinZpQT1ouGC2VkH1L7jWYPb1ITgKh79Z7QuuJcbE11sw2yAUfNdNyGQkIYDEI5RJ2UNWMEL/io1AogIEZWFmUPB/G0TZjj5N0YUAAAAASUVORK5CYII=" InformativeScreenshot="0d664420aaae4238c55e3347b8529050.png" Selector="&lt;wnd app='winword.exe' cls='OpusApp' title='Document1 - Word'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
