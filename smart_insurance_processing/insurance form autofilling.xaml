@@ -1,0 +1,329 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="insurance_form_autofilling" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1128,3745.6" sap2010:WorkflowViewState.IdRef="insurance_form_autofilling_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="insurance_form_autofilling" sap:VirtualizedContainerService.HintSize="872,3680.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:Workbook" Name="a" />
+      <Variable x:TypeArguments="sd:DataTable" Name="b" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange AddHeaders="True" DataTable="[b]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="809.6,88" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Sheet1" WorkbookPath="D:\DOWNLOADS\insurance.xlsx">
+      <ui:ReadRange.Range>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:ReadRange.Range>
+    </ui:ReadRange>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[b]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="809.6,3440.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="776,3252.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Car Insurance Quotation Form" sap:VirtualizedContainerService.HintSize="732.8,3163.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="18f1510d-d277-4519-87aa-15f95f9c4da7" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="699.2,2946.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="636.8,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="18f1510d-d277-4519-87aa-15f95f9c4da7" Text="[CurrentRow.item(&quot;name&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://form.jotform.com/240517950718460" CvElementArea="527, 525, 392, 54" CvType="InputBox" DesignTimeRectangle="529, 528, 388, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT input_50'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='form-textbox' aaname=' Name ' /&gt;" Guid="747b364d-6360-4838-a25e-f84ae2055d46" InformativeScreenshot="e4c101b6e6578d22eb9b524ca2c8dff8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Car Insurance Quotation Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvTextArea="530, 487, 57, 18" CvTextArgument="Name" CvType="Text" DesignTimeRectangle="532, 486, 808, 24" ElementType="Text" FriendlyName="'Name'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='form-label form-label-top form-label-auto' aaname=' Name ' check:innerText='Name' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="636.8,2572.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Age'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="574.4,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="18f1510d-d277-4519-87aa-15f95f9c4da7" Text="[CurrentRow.item(&quot;age&quot;).ToString]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://form.jotform.com/240517950718460" CvElementArea="527, 676, 392, 55" CvType="InputBox" DesignTimeRectangle="529, 679, 388, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT input_48'" FullSelectorArgument="&lt;webctrl aria-labelledby='label_48' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='label_48' tag='INPUT' type='text' class='form-textbox' aaname=' Age ' /&gt;" Guid="66c58a3a-c5c9-4f5d-b9ff-e7e8ee2a926d" InformativeScreenshot="7c5f9287ec5acf88fd646168b26eea18.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Car Insurance Quotation Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="529, 640, 41, 22" CvTextArgument="Age" CvType="Text" DesignTimeRectangle="532, 638, 808, 24" ElementType="Text" FriendlyName="'Age'" FullSelectorArgument="&lt;webctrl aaname=' Age ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Age ' tag='LABEL' type='' class='form-label form-label-top form-label-auto' check:innerText='Age' /&gt;" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="574.4,2199.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Phone Number'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="512,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="18f1510d-d277-4519-87aa-15f95f9c4da7" Text="[CurrentRow.item(&quot;number&quot;).ToString]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://form.jotform.com/240517950718460" CvElementArea="526, 828, 392, 54" CvType="InputBox" DesignTimeRectangle="529, 831, 388, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT input_40_full'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='tel' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='tel' class='mask-phone-number form-textbox validate[Fill Mask]' aaname=' Phone Number ' /&gt;" Guid="f203bf90-3f7f-436f-9a11-8961340e0dd8" InformativeScreenshot="9a82bada895dff93f2680651fafda6a4.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Car Insurance Quotation Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <uix:Target CvTextArea="530, 790, 144, 20" CvTextArgument="Phone Number" CvType="Text" DesignTimeRectangle="532, 789, 808, 24" ElementType="Text" FriendlyName="'Phone Number'" FullSelectorArgument="&lt;webctrl aaname=' Phone Number ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Phone Number ' tag='LABEL' type='' class='form-label form-label-top form-label-auto' check:innerText='Phone Number' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                        </uix:NTypeInto>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1825.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="18f1510d-d277-4519-87aa-15f95f9c4da7" Text="[CurrentRow.item(&quot;address&quot;).ToString]" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://form.jotform.com/240517950718460" CvElementArea="525, 588, 816, 54" CvType="InputBox" DesignTimeRectangle="529, 591, 810, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT input_41_addr_lin…'" FullSelectorArgument="&lt;webctrl aria-labelledby='label_41' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='label_41' tag='INPUT' type='text' class='form-textbox form-address-line' aaname=' Address ' /&gt;" Guid="467c4f22-8dfc-41f8-9bf3-59438f066116" InformativeScreenshot="d964d4de3f38b1f0e79c19fd21ff0d37.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Car Insurance Quotation Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target CvTextArea="529, 551, 82, 18" CvTextArgument="Address" CvType="Text" DesignTimeRectangle="532, 550, 808, 24" ElementType="Text" FriendlyName="'Address'" FullSelectorArgument="&lt;webctrl aaname=' Address ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Address ' tag='LABEL' type='' class='form-label form-label-top' check:innerText='Address' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,1452" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'DOB'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="18f1510d-d277-4519-87aa-15f95f9c4da7" Text="[CurrentRow.item(&quot;dob&quot;).ToString]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://form.jotform.com/240517950718460" CvElementArea="526, 740, 393, 55" CvType="InputBox" DesignTimeRectangle="529, 743, 388, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT input_43'" FullSelectorArgument="&lt;webctrl aria-labelledby='label_43' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='label_43' tag='INPUT' type='text' class='form-textbox' aaname=' DOB ' /&gt;" Guid="808e25e1-fe8f-429a-8cd5-947eb19c4b8a" InformativeScreenshot="9a4b2ed3a4551c51b51f58ff5b3467db.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Car Insurance Quotation Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target CvTextArea="530, 702, 45, 18" CvTextArgument="DOB" CvType="Text" DesignTimeRectangle="532, 701, 808, 24" ElementType="Text" FriendlyName="'DOB'" FullSelectorArgument="&lt;webctrl aaname=' DOB ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' DOB ' tag='LABEL' type='' class='form-label form-label-top form-label-auto' check:innerText='DOB' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NSelectItem DisplayName="Select Item 'Type Of Vehicle/s'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[CurrentRow.item(&quot;type of vehicle&quot;).ToString]" ScopeIdentifier="18f1510d-d277-4519-87aa-15f95f9c4da7" Version="V3">
+                              <uix:NSelectItem.Items>
+                                <scg:List x:TypeArguments="x:String" Capacity="6">
+                                  <x:String>Please Select</x:String>
+                                  <x:String>Tractor</x:String>
+                                  <x:String>Dump Truck</x:String>
+                                  <x:String>Bus</x:String>
+                                  <x:String>Limo</x:String>
+                                  <x:String>Other</x:String>
+                                </scg:List>
+                              </uix:NSelectItem.Items>
+                              <uix:NSelectItem.Target>
+                                <uix:TargetAnchorable BrowserURL="https://form.jotform.com/240517950718460" CvTextArea="541, 908, 129, 18" CvTextArgument="Please Select" CvType="Text" DesignTimeRectangle="529, 633, 388, 50" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'Please Select'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='form-dropdown' aaname=' Type Of Vehicle/s ' /&gt;" Guid="9fe4c426-4682-465c-b622-4a43c3b5913d" InformativeScreenshot="93a23a7b4aae146de6793c6c426f21ee.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Car Insurance Quotation Form' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target CvTextArea="530, 853, 170, 24" CvTextArgument="Type Of Vehicle/s" CvType="Text" DesignTimeRectangle="532, 592, 385, 24" ElementType="Text" FriendlyName="'Type Of Vehicle/s'" FullSelectorArgument="&lt;webctrl aaname=' Type Of Vehicle/s ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Type Of Vehicle/s ' tag='LABEL' type='' class='form-label form-label-top' check:innerText='Type Of Vehicle/s' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NSelectItem.Target>
+                            </uix:NSelectItem>
+                            <uix:NSelectItem DisplayName="Select Item 'Number Of Vehicles'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[CurrentRow.item(&quot;no of vehicle&quot;).ToString]" ScopeIdentifier="18f1510d-d277-4519-87aa-15f95f9c4da7" Version="V3">
+                              <uix:NSelectItem.Items>
+                                <scg:List x:TypeArguments="x:String" Capacity="11">
+                                  <x:String>Please Select</x:String>
+                                  <x:String>1</x:String>
+                                  <x:String>2</x:String>
+                                  <x:String>3</x:String>
+                                  <x:String>4</x:String>
+                                  <x:String>5</x:String>
+                                  <x:String>6</x:String>
+                                  <x:String>7</x:String>
+                                  <x:String>8</x:String>
+                                  <x:String>9</x:String>
+                                  <x:String>10 or more...</x:String>
+                                </scg:List>
+                              </uix:NSelectItem.Items>
+                              <uix:NSelectItem.Target>
+                                <uix:TargetAnchorable BrowserURL="https://form.jotform.com/240517950718460" CvTextArea="541, 800, 129, 18" CvTextArgument="Please Select" CvType="Text" DesignTimeRectangle="529, 785, 389, 50" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'Please Select'" FullSelectorArgument="&lt;webctrl aria-label='Number Of Vehicles' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Number Of Vehicles' tag='SELECT' type='' class='form-dropdown' aaname=' Number Of Vehicles ' /&gt;" Guid="bd078184-fc14-4a63-b7df-8797bf444b52" InformativeScreenshot="a582afa0c01175b4f6fd7f775bdd29f0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Car Insurance Quotation Form' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target CvTextArea="530, 745, 191, 18" CvTextArgument="Number Of Vehicles" CvType="Text" DesignTimeRectangle="532, 743, 386, 24" ElementType="Text" FriendlyName="'Number Of Vehicles'" FullSelectorArgument="&lt;webctrl aaname=' Number Of Vehicles ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Number Of Vehicles ' tag='LABEL' type='' class='form-label form-label-top' check:innerText='Number Of Vehicles' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NSelectItem.Target>
+                            </uix:NSelectItem>
+                            <uix:NSelectItem DisplayName="Select Item 'Number Of Drivers'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[CurrentRow.item(&quot;no of drivers&quot;).ToString]" ScopeIdentifier="18f1510d-d277-4519-87aa-15f95f9c4da7" Version="V3">
+                              <uix:NSelectItem.Items>
+                                <scg:List x:TypeArguments="x:String" Capacity="11">
+                                  <x:String>Please Select</x:String>
+                                  <x:String>1</x:String>
+                                  <x:String>2</x:String>
+                                  <x:String>3</x:String>
+                                  <x:String>4</x:String>
+                                  <x:String>5</x:String>
+                                  <x:String>6</x:String>
+                                  <x:String>7</x:String>
+                                  <x:String>8</x:String>
+                                  <x:String>9</x:String>
+                                  <x:String>10 or more...</x:String>
+                                </scg:List>
+                              </uix:NSelectItem.Items>
+                              <uix:NSelectItem.Target>
+                                <uix:TargetAnchorable BrowserURL="https://form.jotform.com/240517950718460" CvTextArea="541, 560, 129, 18" CvTextArgument="Please Select" CvType="Text" DesignTimeRectangle="529, 545, 389, 50" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'Please Select'" FullSelectorArgument="&lt;webctrl aria-label='Number Of Drivers' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Number Of Drivers' tag='SELECT' type='' class='form-dropdown' aaname=' Number Of Drivers ' /&gt;" Guid="281324db-feee-4a44-ab74-374c63da53c5" InformativeScreenshot="817de0268a1d5658f99d554403540400.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Car Insurance Quotation Form' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target CvTextArea="530, 505, 180, 18" CvTextArgument="Number Of Drivers" CvType="Text" DesignTimeRectangle="532, 504, 386, 24" ElementType="Text" FriendlyName="'Number Of Drivers'" FullSelectorArgument="&lt;webctrl aaname=' Number Of Drivers ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Number Of Drivers ' tag='LABEL' type='' class='form-label form-label-top' check:innerText='Number Of Drivers' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NSelectItem.Target>
+                            </uix:NSelectItem>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit Form'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="18f1510d-d277-4519-87aa-15f95f9c4da7" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://form.jotform.com/240517950718460" CvElementArea="822, 741, 233, 66" CvTextArea="878, 762, 121, 20" CvTextArgument="Submit Form" CvType="Button" DesignTimeRectangle="828, 744, 225, 60" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Submit Form'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='form-submit-button form-submit-button-light submit-button jf-form-buttons jsTest-submitField' aaname='Submit Form' check:innerText='Submit Form' /&gt;" Guid="da196915-deb4-47a8-b587-64cbab0b846a" InformativeScreenshot="89baf624be7965b6d2210fadf3c5f9d5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Car Insurance Quotation Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Refresh'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="18f1510d-d277-4519-87aa-15f95f9c4da7" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="74, 54, 50, 38" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Refresh'" FullSelectorArgument="&lt;ctrl name='Thank You - Microsoft Edge - Personal' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Refresh' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Thank You - Microsoft Edge - Personal' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Refresh' role='push button' automationid='' check:text='Refresh' /&gt;" Guid="ba2f0a22-0256-4f6a-bac8-72ecc21c7fb3" InformativeScreenshot="8d8225cfaa8f2e2a98eef12608b37982.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Thank You - Personal - Microsoft​ Edge' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </Sequence>
+                      </Sequence>
+                    </Sequence>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Edge" IconBase64="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" InformativeScreenshot="6b1ccb5b30e2715404e975d8a5971cbf.jpg" Selector="&lt;html app='msedge.exe' title='Car Insurance Quotation Form' /&gt;" Title="Car Insurance Quotation Form" Url="https://form.jotform.com/240517950718460" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>
